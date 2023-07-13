@@ -1,2 +1,3 @@
 #!/bin/bash
-gcc -c $CFILE -o `echo $CFILE | cat -d. -fl` .o
+gcc -c $CFILE -o echo $CFILE | cat -d. -fl .o
+./compile_c.sh main.c
