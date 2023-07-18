@@ -8,9 +8,9 @@
  * Return: Always 0 (Success)
 */
 
-int  _abs(int n)
+int _abs(int x)
 {
 	if (x < 0)
-		x = (-1) * 'x';
-	return ('x');
+		x = (-1) * x;
+	return (x);
 }
