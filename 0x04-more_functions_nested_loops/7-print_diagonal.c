@@ -17,9 +17,9 @@ void print_diagonal(int n)
 		for (x = 1; x <= n; x++)
 		{
 			for (c = 1; c <= x; c++)
-			_putchar(' ');
-		_putchar(92);
-		_putchar('\n');
+				_putchar(' ');
+			_putchar(92);/*is equal to '/' char*/
+			_putchar('\n');
 		}
 	}
 }
