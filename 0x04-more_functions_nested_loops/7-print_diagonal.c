@@ -8,17 +8,17 @@
 
 void print_diagonal(int n)
 {
-    int x, c;
+	int pos, sps;
 
 	if (n <= 0)
 		_putchar('\n');
 	else
 	{
-		for (x = 0; x <= n; x++)
+		for (pos = 1; pos <= n; pos++)
 		{
-			for (c = 1; c <= x; c++)
+			for (sps = 1; sps <= pos; sps++)
 				_putchar(' ');
-			_putchar(92);/*is equal to '\' char*/
+			_putchar(92);
 			_putchar('\n');
 		}
 	}
