@@ -6,7 +6,7 @@
  * @dest: char type string
  * @src: char type string
  *
- * Descripion: copy the string 
+ * Descripion: copy the string
  *
  * Return: Pointer to dest
 */
