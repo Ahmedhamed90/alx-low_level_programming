@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _puts - prints a string
+ * _puts - prints a string, followed by a nawline to stdout
  *
  * @str: string prameter to print
  *
