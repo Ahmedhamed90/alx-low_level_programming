@@ -10,7 +10,7 @@
 
 void _print_rev_recursion(char *s)
 {
-	for (int s = '\0'; s >= 0; s++)
+	for (char s = '\0'; s >= 0; s++)
 	{
 		_print_rev_recursion(s + 1);
 		_putchar(*s);
