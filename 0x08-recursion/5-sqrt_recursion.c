@@ -4,22 +4,36 @@
  * _sqrt_recursion - a natural square root
  *
  * @n: int
+ * @x: int
  *
  * Return: int
 */
 
+int func(int n, int x);
 int _sqrt_recursion(int n)
 {
-	int x;
+	return (func(n, 1));
+}
 
-	if (n == x)
+/**
+ * _sqrt_recursion - a natural square root
+ *
+ * @n: int
+ * @x: int
+ *
+ * Return: int
+*/
+
+int func(int n, int x)
+{
+	if (x * x == n)
 	{
 		return (x);
 	}
-	else if (n < x)
+	else if (x * x < n)
 	{
-		return (x.sqrt(n));
+		return (func(n, x + 1));
 	}
 	else
-		return (-1);
+		return (-1)
 }
