@@ -12,13 +12,13 @@ int _sqrt_recursion(int n)
 {
 	int x;
 
-	if (x * x == n)
+	if (n == x)
 	{
 		return (x);
 	}
-	else if (x * x < n)
+	else if (n < x)
 	{
-		return (x + 1);
+		return (x.sqrt(n));
 	}
 	else
 		return (-1);
