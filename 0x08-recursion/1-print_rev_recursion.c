@@ -4,18 +4,16 @@
  * _print_rev_recursion - pointer
  *
  * @s: pointer a string
- * @z: input
- * @x: input
  *
  * Return: void
 */
 
 void _print_rev_recursion(char *s)
 {
-	char x = "";
 
-	for (int z = *s.length() - 1 ; z >= 0; z--)
+	for (int *s = *s.length() - 1 ; *s >= 0; *s--)
 	{
-		x += *s[z]
+		_print_rev_recursion(s + 1);
+		_putchar(*s);
 	}
 }
