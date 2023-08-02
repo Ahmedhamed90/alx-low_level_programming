@@ -4,6 +4,8 @@
  * _print_rev_recursion - pointer
  *
  * @s: pointer a string
+ * @z: input
+ * @x: input
  *
  * Return: void
 */
