@@ -35,5 +35,5 @@ int func(int n, int x)
 		return (func(n, x + 1));
 	}
 	else
-		return (-1)
+		return (-1);
 }
