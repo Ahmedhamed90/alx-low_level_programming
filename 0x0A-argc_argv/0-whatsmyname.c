@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- * main pointer program name
+ * main - pointer program name
  *
  * @argc: int
- * @argv: char
+ * @argv: list
  *
  * Return: 0
 */
