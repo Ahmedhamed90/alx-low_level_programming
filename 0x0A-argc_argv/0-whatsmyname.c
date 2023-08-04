@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - pointer program name
+ * main-print program name, followed by a new line
  *
  * @argc: int
  * @argv: list
