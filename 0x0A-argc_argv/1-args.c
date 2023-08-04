@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- * main-print number of argument
+ * main-print number of argument passed.
  *
- * @argc: number
- * @argv: pointer
+ * @argc: number of commandline arguments.
+ * @argv: pointer to an array of command line arguments.
  *
  * Reutrn: 0-success, non-zero-fial.
 */
