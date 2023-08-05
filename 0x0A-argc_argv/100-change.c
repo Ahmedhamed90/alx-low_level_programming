@@ -10,33 +10,29 @@
 
 int main(int argc, char *argv[])
 {
-	if (argc != 2)
+	if (argc == 2)
+	{
+		int i, y = 0, z = atoi(argv[1]);
+		int cents[] = {25, 10, 5, 2, 1};
+
+		for (i = 0; i < 5; i++)
+		{
+			if (z >= cents[i])
+			{
+				y += z / cents[i];
+				z = z % cents[i];
+				if (z % cents[i] == 0)
+				{
+					break;
+				}
+			}
+		}
+		printf("%d\n", y);
+	}
+	else
 	{
 		printf("Error\n");
 		return (1);
 	}
-
-	int cents = atoi(argv[1]);
-
-	if (cents < 0)
-	{
-		printf("0\n");
-		return (0);
-	}
-
-	int coins[] = {25, 10, 5, 2, 1};
-	int num_coins = sizeof(coins) / sizeof(coins[0]);
-	int count = 0;
-
-	for (int i = 0; i < num_coins; i++)
-	{
-		while (cents >= coins[i])
-		{
-			cents -= coins[i];
-			count++;
-		}
-	}
-
-	printf("%d\n", count);
 	return (0);
 }
