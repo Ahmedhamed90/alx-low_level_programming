@@ -4,8 +4,8 @@
 /**
  * main-print sum of 2 numbers
  *
- * @ragc: number
- * @ragv: pointer
+ * @argc: number
+ * @argv: pointer
  *
  * Return: 0, non
 */
