@@ -6,7 +6,7 @@
  * @argc: number of commandline arguments.
  * @argv: pointer to an array commandline arguments.
  *
- * Reutrn: 0-success, non-zero-fail.
+ * Return: 0-success, non-zero-fail.
 */
 
 int main(int argc, char *argv[] __attribute__((unused)))
