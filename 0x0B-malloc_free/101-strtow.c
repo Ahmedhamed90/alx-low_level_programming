@@ -36,44 +36,44 @@ int wordcnt(char *s)
 
 char **strtow(char *str)
 {
-	int z, x, c, v, b = 0, wc = 0;
+	int i, j, k, l, n = 0, wc = 0;
 	char **w;
 
 	if (str == NULL || *str == '\0')
 		return (NULL);
-	b = wordcnt(str);
-	if (b == 1)
+	n = wordcnt(str);
+	if (n == 1)
 		return (NULL);
 	w = (char **)malloc(n * sizeof(char *));
 	if (w == NULL)
 		return (NULL);
-	w[b - 1] = NULL;
-	z = 0;
-	while (str[z])
+	w[n - 1] = NULL;
+	i = 0;
+	while (str[i])
 	{
-		if (str[z] != ' ' && (z == 0 || str[z - 1] == ' '))
+		if (str[i] != ' ' && (i == 0 || str[i - 1] == ' '))
 		{
-			for (x = 1; str[z + x] != ' ' && str[z + x]; x++)
+			for (j = 1; str[i + j] != ' ' && str[i + j]; j++)
 				;
-			x++;
-			w[wc] = (char *)malloc(x * sizeof(char));
-			x--;
+			j++;
+			w[wc] = (char *)malloc(j * sizeof(char));
+			j--;
 			if (w[wc] == NULL)
 			{
-				for (c = 0; c < wc; c++)
+				for (k = 0; k < wc; k++)
 					free(w[c]);
 				free(w[b - 1]);
 				free(w);
 				return (NULL);
 			}
-			for (v = 0; v < x; v++)
-				w[wc][v] = str[z + v];
-			w[wc][v] = '\0';
+			for (l = 0; l < j; l++)
+				w[wc][l] = str[i + l];
+			w[wc][l] = '\0';
 			wc++
-				z += x;
+				i += j;
 		}
 		else
-			z++;
+			i++;
 	}
 	return (w);
 }
