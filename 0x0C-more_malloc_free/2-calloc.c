@@ -3,19 +3,19 @@
 /**
  * _mset - fille memory
  *
- * @s: pointer
+ * @S: pointer
  * @b: constant
  * @n: max bytes
  *
- * Return: s
+ * Return: S
 */
 
-char*_mset(char *s, char b, unsigned int n)
+char *_mset(char *S, char b, unsigned int n)
 {
-	char *ptr = s;
+	char *ptr = S;
 
 	while (n--)
-		*s++ = b;
+		*S++ = b;
 
 	return (ptr);
 }
