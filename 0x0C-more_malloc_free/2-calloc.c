@@ -10,7 +10,7 @@
  * Return: s
 */
 
-cha *_mset(char *s, char b, unsigned int n)
+char*_mset(char *s, char b, unsigned int n)
 {
 	char *ptr = s;
 
