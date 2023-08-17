@@ -70,9 +70,9 @@ void print_all(const char * const format, ...)
 		y = 0;
 		while (tokens[y].token)
 		{
-			if (forma[x] == token[y].token[0])
+			if (format[x] == tokens[y].token[0])
 			{
-				token[y].f(separator, ap);
+				tokens[y].f(separator, ap);
 				separator = ", ";
 			}
 			y++;
