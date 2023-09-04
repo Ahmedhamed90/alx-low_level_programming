@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * read_textfile - read_textfile
+ * read_textfile - read text from a file
  *
  * @filename: name of file
  * @letters: number
